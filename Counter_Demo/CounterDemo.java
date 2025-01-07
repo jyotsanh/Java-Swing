@@ -1,6 +1,7 @@
 import javax.swing.JFrame;
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 import javax.swing.JButton;
 import javax.swing.JTextField;
@@ -30,7 +31,7 @@ public class CounterDemo {
         frame.add(reset_button);
 
         up_button.addActionListener(new ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent e) {
+            public void actionPerformed(ActionEvent e) {
                 int number = Integer.parseInt(textField.getText());
                 number++;
                 textField.setText(String.valueOf(number));
@@ -38,7 +39,7 @@ public class CounterDemo {
         });
 
         down_button.addActionListener(new ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent e) {
+            public void actionPerformed(ActionEvent e) {
                 int number = Integer.parseInt(textField.getText());
                 number--;
                 textField.setText(String.valueOf(number));
